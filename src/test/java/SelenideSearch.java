@@ -22,6 +22,7 @@ public class SelenideSearch {
         // убедиться, что в списке страниц (Pages) есть страница SoftAssertions
         // открыть страницу SoftAssertions
         $(".markdown-body").$("[href='/selenide/selenide/wiki/SoftAssertions']").click();
+
         // проверить, что внутри есть пример кода для JUnit5
         $("#wiki-body").shouldHave(text("3. Using JUnit5 extend test class: "
                 + """
